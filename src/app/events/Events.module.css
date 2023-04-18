@@ -34,3 +34,119 @@
     margin-top: 20px;
   }
 
+  .loadMore {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+
+  .button {
+    /* height: 50px; */
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .button:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+
+  .eventTitle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .date{
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: rgb(218, 213, 213);
+  }
+
+  .name {
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(221, 11, 11);
+  }
+
+  .location{
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: rgb(67, 107, 237);
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px;
+  }
+  
+  .header {
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 8px; 
+    font-size: x-large;
+    background-color: gainsboro;
+  }
+  
+  .data {
+    font-size: large;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    white-space: nowrap;
+    margin: 0; 
+    padding: 8px; 
+    transition: background-color 0.3s; 
+    color: rgb(218, 213, 213);
+  }
+
+  .pWinner{
+    font-size: large;
+    text-align: left;
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 8px; 
+    transition: background-color 0.3s;
+    color: green
+  }
+
+  .pLoser {
+    font-size: large;
+    text-align: left;
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 8px; 
+    transition: background-color 0.3s;
+    color: red
+  }
+
+  .pDraw {
+    font-size: large;
+    text-align: left;
+    white-space: nowrap; 
+    margin: 0; 
+    padding: 8px; 
+    color: rgb(218, 213, 213);
+    transition: background-color 0.3s;
+  }
+
+  .row {
+    display: contents;
+  }
+  
+  .row:hover > div{
+    background-color: rgba(148, 120, 120, 0.1);
+  }
+  
+  

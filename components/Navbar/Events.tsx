@@ -41,9 +41,9 @@ useEffect(() => {
 
   function nextPage() {
     console.log("working")
-    setCurrentSliceStart((c) => c + 4)
-    setCurrentSliceEnd((c) => c + 4)
-    setCurrentPage(() => currentPage + 1)
+    // setCurrentSliceStart((c) => c + 4)
+    setCurrentSliceEnd((c) => c + 15)
+    setCurrentPage((c) => c + 1)
     
   }
   console.log(currentSliceStart, currentSliceEnd)
@@ -71,9 +71,10 @@ useEffect(() => {
             </li>
         )})}
       </ul>
-      <div></div>
-      {currentSliceStart >= 4 && <button onClick={previousPage}>previous</button>}
-        {currentSliceEnd < events.length && <button onClick={nextPage}>next</button>}
+      <div className={styles.loadMore}>
+      {/* {currentSliceStart >= 4 && <button onClick={previousPage}>previous</button>} */}
+        {currentSliceEnd < events.length && <button className={styles.button} onClick={nextPage}>Load More</button>}
+      </div>
     </div>
   )
 }
